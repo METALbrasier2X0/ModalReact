@@ -6,7 +6,7 @@ import Open from "./lib/Modal/Open.js";
 
 ReactDOM.render(
   <React.StrictMode>
-  <button onClick={Open}>Save</button> <Modal Text="Ceci est un modal" showClose={false}/>
+  <button onClick={Open}>Save</button> <Modal Text="Ceci est un modal" modalClass="" showClose={true} outsideClose={false}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -14,5 +14,4 @@ function Open() {
    modal.style.display = 'block';
 }
 
-
 export default Open;

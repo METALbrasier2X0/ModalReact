@@ -11,14 +11,13 @@ import './Style.css';
  */
 
 
-
 function Modal(props) {
 
    return (
       <>
       <div  id="confirmation" className="modal">
-      <div className="modal-outside" onClick={Closemodal}> </div>
-      <div className="modal-content">
+      {props.outsideClose === true && <div className="modal-outside" onClick={Closemodal}> </div> }
+      <div className={`modal-content ${props.modalClass}`}>
       {props.showClose === true && <span className="close" onClick={Closemodal} id="close">&times;</span> }
       <p>{props.Text}</p>
       </div></div>
