@@ -13,10 +13,11 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 /**
  * Code to show the Modal
- * @return  {React element}             Containers that shows the home page   
+ * @return  {React element}             Functions that open the modal by changing it's display   
  */
 function Open() {
   var modal = document.getElementById('confirmation');
+  var content = document.getElementById('content');
   modal.style.display = 'block';
 }
 

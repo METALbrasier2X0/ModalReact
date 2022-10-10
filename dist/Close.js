@@ -13,7 +13,7 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 /**
  * Code to show the home page
- * @return  {React element}             Containers that shows the home page   
+ * @return  {React element}             Function that closes the modal by chaning it's display
  */
 function Closemodal() {
   var modal = document.getElementById('confirmation');

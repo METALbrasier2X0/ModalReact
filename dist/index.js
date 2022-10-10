@@ -17,23 +17,35 @@ require("./Style.css");
 
 /**
  * Code to show the home page
- * @return  {React element}             Containers that shows the home page   
+ * @param {Props}                       Props data - The input and options for generating the modal 
+ * @return  {React element}             Containers that shows the modal  
  */
 function Modal(props) {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     id: "confirmation",
-    className: "modal"
+    className: props.blockerClass,
+    style: {
+      backgroundColor: props.backgroundHue
+    }
   }, props.outsideClose === true && /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-outside",
     onClick: _Close.default
   }, " "), /*#__PURE__*/_react.default.createElement("div", {
-    className: "modal-content ".concat(props.modalClass)
+    id: "content",
+    className: props.modalClass
   }, props.showClose === true && /*#__PURE__*/_react.default.createElement("span", {
-    className: "close",
+    className: props.closeClass,
     onClick: _Close.default,
     id: "close"
-  }, "\xD7"), /*#__PURE__*/_react.default.createElement("p", null, props.Text))));
+  }, "\xD7"), props.Content)));
 }
+/*Default values */
 
+
+Modal.defaultProps = {
+  modalClass: "modal-content",
+  closeClass: "close",
+  blockerClass: "modal"
+};
 var _default = Modal;
 exports.default = _default;
