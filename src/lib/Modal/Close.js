@@ -13,6 +13,7 @@ function Closemodal() {
 const modal = document.getElementById('confirmation');
 
 modal.style.display = 'none';
+
 }
 
 

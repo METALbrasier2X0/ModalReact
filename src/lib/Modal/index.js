@@ -13,12 +13,13 @@ import './Style.css';
 
 function Modal(props) {
 
+
    return (
       <>
-      <div  id="confirmation" className="modal">
+      <div  id="confirmation" className="modal" style={{ backgroundColor: props.backgroundHue}}>
       {props.outsideClose === true && <div className="modal-outside" onClick={Closemodal}> </div> }
-      <div className={`modal-content ${props.modalClass}`}>
-      {props.showClose === true && <span className="close" onClick={Closemodal} id="close">&times;</span> }
+      <div id="content" className={`modal-content ${props.modalClass}`}>
+      {props.showClose === true && <span className={`close ${props.closeClass}`} onClick={Closemodal} id="close">&times;</span> }
       <p>{props.Text}</p>
       </div></div>
       </>

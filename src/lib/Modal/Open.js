@@ -11,7 +11,9 @@ import ReactDOM from 'react-dom';
 function Open() {
 
    const modal = document.getElementById('confirmation');
+   const content =  document.getElementById('content');
    modal.style.display = 'block';
+
 }
 
 export default Open;

@@ -23,11 +23,11 @@ function Modal(props) {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     id: "confirmation",
     className: "modal"
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, props.outsideClose === true && /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-outside",
     onClick: _Close.default
   }, " "), /*#__PURE__*/_react.default.createElement("div", {
-    className: "modal-content"
+    className: "modal-content ".concat(props.modalClass)
   }, props.showClose === true && /*#__PURE__*/_react.default.createElement("span", {
     className: "close",
     onClick: _Close.default,
