@@ -32,4 +32,4 @@ than put `<Modal/>` on the page where you want your modal to be with the options
   <Modal Content={[<p> This is a <strong>Test</strong>, Thank you. </p>]} showClose={true}/>
 ```
 
-![Alt text](screenshot.jpg?raw=true "Screenshot modal")
+![ScreenShot](https://raw.githubusercontent.com/METALbrasier2X0/ModalReact/main/screenshot.jpg)

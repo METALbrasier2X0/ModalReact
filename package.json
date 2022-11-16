@@ -1,15 +1,12 @@
 {
   "name": "modal-react-raphael",
-  "version": "0.1.3",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "version": "0.1.4",
   "author": "Raphaël ARRAYAGO <raphael.arrayago@gmail.com>",
   "description":"Create easy modals in React ",
-  "Keywords":[
-      "Modal",
-      "React",
-      "Front-end"
-    ],
+  "keywords": [ "Modal", "React", "Front-end" ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+
   "files": [
     "dist"
   ],
