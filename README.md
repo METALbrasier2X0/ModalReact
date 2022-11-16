@@ -25,4 +25,11 @@ than put `<Modal/>` on the page where you want your modal to be with the options
 * backgroundHue : (String, HEX value) Choice for the background color
 
 
+## Examples :
 
+```
+  <button onClick={Open}>Save</button>
+  <Modal Content={[<p> This is a <strong>Test</strong>, Thank you. </p>]} showClose={true}/>
+```
+
+![Alt text](screenshot.jpg?raw=true "Screenshot modal")
